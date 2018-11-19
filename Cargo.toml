@@ -1,0 +1,10 @@
+[package]
+name = "issue-47048-fix"
+version = "1.0.0"
+authors = ["Arsenii Lyashenko <arsenylyashenko.3@gmail.com>", "Trevor Spiteri <tspiteri@ieee.org>"]
+
+[lib]
+path = "lib.rs"
+
+[target.'cfg(all(target_os = "windows", target_env = "gnu"))'.build-dependencies]
+cc = "^1"
