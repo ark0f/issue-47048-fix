@@ -7,7 +7,7 @@ repository = "https://github.com/ark0f/issue-47048-fix"
 keywords = ["build-dependencies", "windows", "no_std"]
 categories = ["development-tools"]
 description = "Fix issue #47048 in github.com/rust-lang/rust"
-license = "No license"
+license = "MIT OR Apache-2.0"
 
 [lib]
 path = "lib.rs"

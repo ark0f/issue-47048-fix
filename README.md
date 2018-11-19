@@ -6,3 +6,11 @@ Thanks to [Trevor Spiteri](https://github.com/tspiteri)
 [build-dependencies]
 issue-47048-fix = "*"
 ```
+
+# License
+This project is licensed under either of
+
+* Apache License, Version 2.0, (LICENSE-APACHE.md or https://www.apache.org/licenses/LICENSE-2.0)
+* MIT license (LICENSE-MIT.md or https://opensource.org/licenses/MIT)
+
+at your option.
