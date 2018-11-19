@@ -2,6 +2,10 @@
 name = "issue-47048-fix"
 version = "1.0.0"
 authors = ["Arsenii Lyashenko <arsenylyashenko.3@gmail.com>", "Trevor Spiteri <tspiteri@ieee.org>"]
+homepage = "https://github.com/ark0f/issue-47048-fix"
+repository = "https://github.com/ark0f/issue-47048-fix"
+keywords = ["build-dependencies", "windows", "no_std"]
+categories = ["development-tools"]
 
 [lib]
 path = "lib.rs"
