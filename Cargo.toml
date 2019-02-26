@@ -1,0 +1,13 @@
+[package]
+name = "issue-47048-fix"
+version = "0.1.0"
+authors = ["Arsenii Lyashenko <arsenylyashenko.3@gmail.com>"]
+description = "Issue #47048 fix"
+repository = "https://github.com/ark0f/issue-47048-fix"
+keywords = ["windows", "build"]
+license = "Apache-2.0 OR MIT"
+readme = "README.md"
+edition = "2018"
+
+[target.'cfg(all(target_os = "windows", target_env = "gnu"))'.dependencies]
+cc = "1"
