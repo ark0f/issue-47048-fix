@@ -1,6 +1,6 @@
 [package]
 name = "issue-47048-fix"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Arsenii Lyashenko <arsenylyashenko.3@gmail.com>"]
 description = "Issue #47048 fix"
 repository = "https://github.com/ark0f/issue-47048-fix"
