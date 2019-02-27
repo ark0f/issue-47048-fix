@@ -12,3 +12,6 @@ edition = "2018"
 
 [target.'cfg(all(target_os = "windows", target_env = "gnu"))'.dependencies]
 cc = "1"
+
+[dev-dependencies]
+version-sync = "0.7"
