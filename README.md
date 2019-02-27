@@ -1,7 +1,7 @@
 # [Issue #47048](https://github.com/rust-lang/rust/issues/47048) fix
 ![License](https://img.shields.io/crates/l/issue_47048_fix.svg)
 [![crates.io](https://img.shields.io/crates/v/issue-47048-fix.svg)](https://crates.io/crates/issue-47048-fix)
-[![API docs](https://docs.rs/issue-47048-fix/badge.svg?version=0.1.1)](https://docs.rs/issue-47048-fix/0.1.1)
+[![API docs](https://docs.rs/issue-47048-fix/badge.svg?version=0.1.2)](https://docs.rs/issue-47048-fix/0.1.2)
 
 Thanks to [Trevor Spiteri](https://github.com/tspiteri)
 

@@ -3,7 +3,7 @@ use std::{env, fs::File, io::Write, path::Path};
 /// Compile C file with fix and add to your executable
 ///
 /// `build.rs`:
-/// ```
+/// ```no_run
 /// use issue_47048_fix::issue_47048_fix;
 ///
 /// fn main() {
