@@ -21,29 +21,8 @@ pub fn issue_47048_fix() {
     if !path.exists() {
         let mut out_file =
             File::create(path.clone()).expect("Failed to create file 'issue_47048_fix.c'");
-        write!(
-            &mut out_file,
-            "{}",
-            r#"
-/*
- * Fix by Trevor Spiteri
- * https://github.com/tspiteri
- * Thank you!
- */
-
-#define _CRTBLD
-#include <stdio.h>
-
-FILE *__cdecl __acrt_iob_func(unsigned index)
-{
-	return &(__iob_func()[index]);
-}
-
-typedef FILE *__cdecl (*_f__acrt_iob_func)(unsigned index);
-_f__acrt_iob_func __MINGW_IMP_SYMBOL(__acrt_iob_func) = __acrt_iob_func;
-"#
-        )
-        .expect("Failed to write content into file 'issue_47048_fix.c'");
+        write!(&mut out_file, "{}", include_str!("fix.c"))
+            .expect("Failed to write content into file 'issue_47048_fix.c'");
     }
 
     cc::Build::new().file(path).compile("issue_47048_fix")
