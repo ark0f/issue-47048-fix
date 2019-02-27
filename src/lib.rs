@@ -13,6 +13,7 @@ use std::{env, fs::File, io::Write, path::Path};
 /// }
 /// ```
 ///
+#[cfg(all(target_os = "windows", target_env = "gnu"))]
 pub fn issue_47048_fix() {
     let path = env::var("OUT_DIR").expect("Failed to get 'OUT_DIR' environment variable");
     let path = Path::new(&path).join("issue_47048_fix.c");
@@ -45,6 +46,8 @@ _f__acrt_iob_func __MINGW_IMP_SYMBOL(__acrt_iob_func) = __acrt_iob_func;
         .expect("Failed to write content into file 'issue_47048_fix.c'");
     }
 
-    #[cfg(all(target_os = "windows", target_env = "gnu"))]
     cc::Build::new().file(path).compile("issue_47048_fix")
 }
+
+#[cfg(not(all(target_os = "windows", target_env = "gnu")))]
+pub fn issue_47048_fix() {}
