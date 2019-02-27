@@ -24,7 +24,7 @@ fn main() {
 ```
 
 # License
-dockerfile-rs under either of:
+`issue-47048-fix` under either of:
 
 * [Apache License 2.0](https://github.com/ark0f/issue-47048-fix/blob/master/LICENSE-APACHE.md)
 * [MIT](https://github.com/ark0f/issue-47048-fix/blob/master/LICENSE-MIT.md)
