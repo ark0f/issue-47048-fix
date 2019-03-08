@@ -14,4 +14,4 @@ deploy:
     on:
         branch: master
     target-branch: gh-pages
-    local-dir: target/x86_64-pc-windows-gnu/doc/issue-47048-fix
+    local-dir: target/x86_64-pc-windows-gnu/doc/issue_47048_fix
