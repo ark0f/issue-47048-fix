@@ -1,0 +1,16 @@
+language: rust
+os: linux
+rust:
+    - stable
+script:
+    - cargo test --all-targets
+    - cargo doc --all --all-features --target x86_64-pc-windows-gnu
+deploy:
+    provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    keep-history: true
+    on:
+        branch: master
+    target-branch: gh-pages
+    local-dir: target/x86_64-pc-windows-gnu/doc

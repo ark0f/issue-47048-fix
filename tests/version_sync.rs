@@ -6,5 +6,4 @@ fn readme() {
         "README.md",
         r#"https://docs\.rs/{name}/badge\.svg\?version={version}"#
     );
-    assert_contains_regex!("README.md", r#"https://docs\.rs/{name}/{version}"#);
 }
