@@ -1,5 +1,3 @@
-use std::{env, fs::File, io::Write, path::Path};
-
 /// Compile C file with fix and add to your executable
 ///
 /// `build.rs`:
@@ -15,6 +13,8 @@ use std::{env, fs::File, io::Write, path::Path};
 ///
 #[cfg(all(target_os = "windows", target_env = "gnu"))]
 pub fn issue_47048_fix() {
+    use std::{env, fs::File, io::Write, path::Path};
+
     let path = env::var("OUT_DIR").expect("Failed to get 'OUT_DIR' environment variable");
     let path = Path::new(&path).join("issue_47048_fix.c");
 

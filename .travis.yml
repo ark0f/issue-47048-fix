@@ -3,6 +3,7 @@ os: linux
 rust:
     - stable
 script:
+    - rustup component add rust-std --target x86_64-pc-windows-gnu
     - cargo test --all-targets
     - cargo doc --all --all-features --target x86_64-pc-windows-gnu
 deploy:
